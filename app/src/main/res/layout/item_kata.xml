@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView
+    android:backgroundTint="@color/dark_blue"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
     <RelativeLayout
         android:layout_margin="25dp"
+        android:background="@color/dark_blue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
         <Button
@@ -13,6 +15,7 @@
             android:layout_height="wrap_content"
             android:text="Anjing"
             android:textAllCaps="true"
+            android:backgroundTint="@color/pink"
             android:textColor="@color/black"
             android:textSize="20sp" />
     </RelativeLayout>
