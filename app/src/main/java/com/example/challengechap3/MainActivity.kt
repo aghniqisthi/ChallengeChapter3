@@ -26,7 +26,21 @@ class MainActivity : AppCompatActivity(), RecyclerViewClickListener {
             ListHuruf("I"),
             ListHuruf("J"),
             ListHuruf("K"),
-            ListHuruf("L")
+            ListHuruf("L"),
+            ListHuruf("M"),
+            ListHuruf("N"),
+            ListHuruf("O"),
+            ListHuruf("P"),
+            ListHuruf("Q"),
+            ListHuruf("R"),
+            ListHuruf("S"),
+            ListHuruf("T"),
+            ListHuruf("U"),
+            ListHuruf("V"),
+            ListHuruf("W"),
+            ListHuruf("X"),
+            ListHuruf("Y"),
+            ListHuruf("Z")
         )
         val adapterHrf = HurufAdapter(listHuruf)
         var gv = GridLayoutManager(this, 3)
@@ -128,6 +142,97 @@ class MainActivity : AppCompatActivity(), RecyclerViewClickListener {
             "Mental"-> intent(list)
             "Mika"-> intent(list)
             "Masak"-> intent(list)
+
+            "N" -> adapterLayout(listKataN())
+            "Nature"-> intent(list)
+            "Navigasi"-> intent(list)
+            "Nama"-> intent(list)
+            "Nasional"-> intent(list)
+            "Nasi"-> intent(list)
+
+            "O" -> adapterLayout(listKataO())
+            "Oppa"-> intent(list)
+            "Orang"-> intent(list)
+            "Orangutan"-> intent(list)
+            "Ombak"-> intent(list)
+            "Ongkir"-> intent(list)
+
+            "P" -> adapterLayout(listKataP())
+            "Pabrik"-> intent(list)
+            "Pipi"-> intent(list)
+            "Panik"-> intent(list)
+            "Pisang"-> intent(list)
+            "Pupuk"-> intent(list)
+
+            "Q" -> adapterLayout(listKataQ())
+            "Qisthi"-> intent(list)
+            "Queen"-> intent(list)
+            "Quran"-> intent(list)
+            "Qasar"-> intent(list)
+            "Qisas"-> intent(list)
+
+            "R" -> adapterLayout(listKataR())
+            "Ratu"-> intent(list)
+            "Rantai"-> intent(list)
+            "Rusak"-> intent(list)
+            "Rindang"-> intent(list)
+            "Rindu"-> intent(list)
+
+            "S" -> adapterLayout(listKataS())
+            "Seventeen"-> intent(list)
+            "Soonyoung"-> intent(list)
+            "Seungkwan"-> intent(list)
+            "Shua"-> intent(list)
+            "Scoups"-> intent(list)
+
+            "T" -> adapterLayout(listKataT())
+            "Timbangan"-> intent(list)
+            "Teriak"-> intent(list)
+            "Tisu"-> intent(list)
+            "Tingkah"-> intent(list)
+            "Televisi"-> intent(list)
+
+            "U" -> adapterLayout(listKataU())
+            "Umur"-> intent(list)
+            "Ulang"-> intent(list)
+            "Ukir"-> intent(list)
+            "Uji"-> intent(list)
+            "Undangan"-> intent(list)
+
+            "V" -> adapterLayout(listKataV())
+            "Vernon"-> intent(list)
+            "Violin"-> intent(list)
+            "Violence"-> intent(list)
+            "Violet"-> intent(list)
+            "Vaksin"-> intent(list)
+
+            "W" -> adapterLayout(listKataW())
+            "Wisdom"-> intent(list)
+            "Where"-> intent(list)
+            "Who"-> intent(list)
+            "When"-> intent(list)
+            "Whose"-> intent(list)
+
+            "X" -> adapterLayout(listKataX())
+            "Xilem"-> intent(list)
+            "Xray"-> intent(list)
+            "Xenia"-> intent(list)
+            "Xenofili"-> intent(list)
+            "Xenofobia"-> intent(list)
+
+            "Y" -> adapterLayout(listKataY())
+            "Yena"-> intent(list)
+            "Yasin"-> intent(list)
+            "Yusuf"-> intent(list)
+            "Yaman"-> intent(list)
+            "Yoyo" -> intent(list)
+
+            "Z" -> adapterLayout(listKataZ())
+            "Zebra"-> intent(list)
+            "Zat"-> intent(list)
+            "Zuma"-> intent(list)
+            "Zelvia"-> intent(list)
+            "Zonk"-> intent(list)
         }
     }
 
@@ -270,6 +375,149 @@ class MainActivity : AppCompatActivity(), RecyclerViewClickListener {
             ListHuruf("Mental"),
             ListHuruf("Mika"),
             ListHuruf("Masak")
+        )
+        return listHuruf
+    }
+
+    fun listKataN():ArrayList<ListHuruf>{
+        var listHuruf = arrayListOf(
+            ListHuruf("Nature"),
+            ListHuruf("Navigasi"),
+            ListHuruf("Nama"),
+            ListHuruf("Nasional"),
+            ListHuruf("Nasi")
+        )
+        return listHuruf
+    }
+
+    fun listKataO():ArrayList<ListHuruf>{
+        var listHuruf = arrayListOf(
+            ListHuruf("Oppa"),
+            ListHuruf("Orang"),
+            ListHuruf("Orangutan"),
+            ListHuruf("Ombak"),
+            ListHuruf("Ongkir")
+        )
+        return listHuruf
+    }
+
+    fun listKataP():ArrayList<ListHuruf>{
+        var listHuruf = arrayListOf(
+            ListHuruf("Pabrik"),
+            ListHuruf("Pipi"),
+            ListHuruf("Panik"),
+            ListHuruf("Pisang"),
+            ListHuruf("Pupuk")
+        )
+        return listHuruf
+    }
+
+    fun listKataQ():ArrayList<ListHuruf>{
+        var listHuruf = arrayListOf(
+            ListHuruf("Qisthi"),
+            ListHuruf("Queen"),
+            ListHuruf("Quran"),
+            ListHuruf("Qasar"),
+            ListHuruf("Qisas")
+        )
+        return listHuruf
+    }
+
+    fun listKataR():ArrayList<ListHuruf>{
+        var listHuruf = arrayListOf(
+            ListHuruf("Ratu"),
+            ListHuruf("Rantai"),
+            ListHuruf("Rusak"),
+            ListHuruf("Rindang"),
+            ListHuruf("Rindu")
+        )
+        return listHuruf
+    }
+
+    fun listKataS():ArrayList<ListHuruf>{
+        var listHuruf = arrayListOf(
+            ListHuruf("Seventeen"),
+            ListHuruf("Soonyoung"),
+            ListHuruf("Seungkwan"),
+            ListHuruf("Shua"),
+            ListHuruf("Scoups")
+        )
+        return listHuruf
+    }
+
+    fun listKataT():ArrayList<ListHuruf>{
+        var listHuruf = arrayListOf(
+            ListHuruf("Timbangan"),
+            ListHuruf("Teriak"),
+            ListHuruf("Tisu"),
+            ListHuruf("Tingkah"),
+            ListHuruf("Televisi")
+        )
+        return listHuruf
+    }
+
+    fun listKataU():ArrayList<ListHuruf>{
+        var listHuruf = arrayListOf(
+            ListHuruf("Umur"),
+            ListHuruf("Ulang"),
+            ListHuruf("Ukir"),
+            ListHuruf("Uji"),
+            ListHuruf("Undangan")
+        )
+        return listHuruf
+    }
+
+    fun listKataV():ArrayList<ListHuruf>{
+        var listHuruf = arrayListOf(
+            ListHuruf("Vernon"),
+            ListHuruf("Violin"),
+            ListHuruf("Violence"),
+            ListHuruf("Violet"),
+            ListHuruf("Vaksin")
+        )
+        return listHuruf
+    }
+
+    fun listKataW():ArrayList<ListHuruf>{
+        var listHuruf = arrayListOf(
+            ListHuruf("Wisdom"),
+            ListHuruf("Where"),
+            ListHuruf("Who"),
+            ListHuruf("When"),
+            ListHuruf("Whose")
+        )
+        return listHuruf
+    }
+
+    fun listKataX():ArrayList<ListHuruf>{
+        var listHuruf = arrayListOf(
+            ListHuruf("Xilem"),
+            ListHuruf("Xray"),
+            ListHuruf("Xenia"),
+            ListHuruf("Xenofili"),
+            ListHuruf("Xenofobia")
+        )
+        return listHuruf
+    }
+
+    fun listKataY():ArrayList<ListHuruf>{
+        var listHuruf = arrayListOf(
+            ListHuruf("Yena"),
+            ListHuruf("Yasin"),
+            ListHuruf("Yusuf"),
+            ListHuruf("Yaman"),
+            ListHuruf("Yoyo")
+        )
+        return listHuruf
+    }
+
+    fun listKataZ():ArrayList<ListHuruf>{
+        var listHuruf = arrayListOf(
+            ListHuruf("Zebra"),
+            ListHuruf("Zat"),
+            ListHuruf("Zuma"),
+            ListHuruf("Zelvia"),
+            ListHuruf("Zonk")
         )
         return listHuruf
     }
