@@ -28,7 +28,28 @@ class HurufFragment : Fragment() {
             ListHuruf("B"),
             ListHuruf("C"),
             ListHuruf("D"),
-            ListHuruf("E")
+            ListHuruf("E"),
+            ListHuruf("F"),
+            ListHuruf("G"),
+            ListHuruf("H"),
+            ListHuruf("I"),
+            ListHuruf("J"),
+            ListHuruf("K"),
+            ListHuruf("L"),
+            ListHuruf("M"),
+            ListHuruf("N"),
+            ListHuruf("O"),
+            ListHuruf("P"),
+            ListHuruf("Q"),
+            ListHuruf("R"),
+            ListHuruf("S"),
+            ListHuruf("T"),
+            ListHuruf("U"),
+            ListHuruf("V"),
+            ListHuruf("W"),
+            ListHuruf("X"),
+            ListHuruf("Y"),
+            ListHuruf("Z")
         )
 
         val adapterHuruf = HurufAdapter(listHrf)
