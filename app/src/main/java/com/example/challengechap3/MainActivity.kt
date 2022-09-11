@@ -5,14 +5,15 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
+import kotlinx.android.synthetic.main.fragment_huruf.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         val listHuruf = arrayListOf(
             ListHuruf("A"),
             ListHuruf("B"),
@@ -36,101 +37,101 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onItemClicked(view: View, list: ListHuruf) {
-        when (list.huruf) {
+        when(list.huruf){
             "A" -> adapterLayout(listKataA())
-            "Anjing" -> intent(list)
-            "Ayam" -> intent(list)
-            "Angsa" -> intent(list)
-            "Angin" -> intent(list)
-            "Alam" -> intent(list)
+            "Anjing"-> intent(list)
+            "Ayam"-> intent(list)
+            "Angsa"-> intent(list)
+            "Angin"-> intent(list)
+            "Alam"-> intent(list)
 
-            "B" -> adapterLayout(listKataB())
-            "Babi" -> intent(list)
+            "B" ->adapterLayout(listKataB())
+            "Babi"-> intent(list)
             "Buaya" -> intent(list)
             "Bisa" -> intent(list)
             "Buncis" -> intent(list)
             "Barat" -> intent(list)
 
             "C" -> adapterLayout(listKataC())
-            "Cicak" -> intent(list)
-            "Cacing" -> intent(list)
-            "Cumi" -> intent(list)
-            "Cincang" -> intent(list)
-            "Cuka" -> intent(list)
+            "Cicak"-> intent(list)
+            "Cacing"-> intent(list)
+            "Cumi"-> intent(list)
+            "Cincang"-> intent(list)
+            "Cuka"-> intent(list)
 
             "D" -> adapterLayout(listKataD())
-            "Dasi" -> intent(list)
-            "Duri" -> intent(list)
-            "Data" -> intent(list)
-            "Durian" -> intent(list)
-            "Demak" -> intent(list)
+            "Dasi"-> intent(list)
+            "Duri"-> intent(list)
+            "Data"-> intent(list)
+            "Durian"-> intent(list)
+            "Demak"-> intent(list)
 
             "E" -> adapterLayout(listKataE())
-            "Emak" -> intent(list)
-            "Enjing" -> intent(list)
-            "Enak" -> intent(list)
-            "Ekosistem" -> intent(list)
-            "Esa" -> intent(list)
+            "Emak"-> intent(list)
+            "Enjing"-> intent(list)
+            "Enak"-> intent(list)
+            "Ekosistem"-> intent(list)
+            "Esa"-> intent(list)
 
             "F" -> adapterLayout(listKataF())
-            "Fanta" -> intent(list)
-            "Fasilitas" -> intent(list)
-            "Fisika" -> intent(list)
-            "Fokus" -> intent(list)
-            "Feses" -> intent(list)
+            "Fanta"-> intent(list)
+            "Fasilitas"-> intent(list)
+            "Fisika"-> intent(list)
+            "Fokus"-> intent(list)
+            "Feses"-> intent(list)
 
             "G" -> adapterLayout(listKataG())
-            "Gema" -> intent(list)
-            "Gaung" -> intent(list)
-            "Gendut" -> intent(list)
-            "Gusar" -> intent(list)
-            "Gemas" -> intent(list)
+            "Gema"-> intent(list)
+            "Gaung"-> intent(list)
+            "Gendut"-> intent(list)
+            "Gusar"-> intent(list)
+            "Gemas"-> intent(list)
 
             "H" -> adapterLayout(listKataH())
-            "Harimau" -> intent(list)
-            "Hoshi" -> intent(list)
-            "Hitam" -> intent(list)
-            "Hindu" -> intent(list)
-            "Helikopter" -> intent(list)
+            "Harimau"-> intent(list)
+            "Hoshi"-> intent(list)
+            "Hitam"-> intent(list)
+            "Hindu"-> intent(list)
+            "Helikopter"-> intent(list)
 
             "I" -> adapterLayout(listKataI())
-            "Inggris" -> intent(list)
-            "Itzy" -> intent(list)
-            "Indonesia" -> intent(list)
-            "Isaac" -> intent(list)
-            "Isu" -> intent(list)
+            "Inggris"-> intent(list)
+            "Itzy"-> intent(list)
+            "Indonesia"-> intent(list)
+            "Isaac"-> intent(list)
+            "Isu"-> intent(list)
 
             "J" -> adapterLayout(listKataJ())
-            "Jangkrik" -> intent(list)
-            "Jambu" -> intent(list)
-            "Jantung" -> intent(list)
-            "Jisoo" -> intent(list)
-            "Jepang" -> intent(list)
+            "Jangkrik"-> intent(list)
+            "Jambu"-> intent(list)
+            "Jantung"-> intent(list)
+            "Jisoo"-> intent(list)
+            "Jepang"-> intent(list)
 
             "K" -> adapterLayout(listKataK())
-            "Katak" -> intent(list)
-            "Kodok" -> intent(list)
-            "Komik" -> intent(list)
-            "Kucing" -> intent(list)
-            "Korea" -> intent(list)
+            "Katak"-> intent(list)
+            "Kodok"-> intent(list)
+            "Komik"-> intent(list)
+            "Kucing"-> intent(list)
+            "Korea"-> intent(list)
 
             "L" -> adapterLayout(listKataL())
             "Landak" -> intent(list)
-            "Lemah" -> intent(list)
-            "Lumpia" -> intent(list)
-            "Lontong" -> intent(list)
-            "Lengkuas" -> intent(list)
+            "Lemah"-> intent(list)
+            "Lumpia"-> intent(list)
+            "Lontong"-> intent(list)
+            "Lengkuas"-> intent(list)
 
             "M" -> adapterLayout(listKataM())
             "Manusia" -> intent(list)
-            "Musik" -> intent(list)
-            "Mental" -> intent(list)
-            "Mika" -> intent(list)
-            "Masak" -> intent(list)
+            "Musik"-> intent(list)
+            "Mental"-> intent(list)
+            "Mika"-> intent(list)
+            "Masak"-> intent(list)
         }
     }
 
-    fun listKataA(): ArrayList<ListHuruf> {
+    fun listKataA():ArrayList<ListHuruf>{
         var listHuruf = arrayListOf(
             ListHuruf("Anjing"),
             ListHuruf("Ayam"),
@@ -141,7 +142,7 @@ class MainActivity : AppCompatActivity() {
         return listHuruf
     }
 
-    fun listKataB(): ArrayList<ListHuruf> {
+    fun listKataB():ArrayList<ListHuruf>{
         var listHuruf = arrayListOf(
             ListHuruf("Babi"),
             ListHuruf("Buaya"),
@@ -152,7 +153,7 @@ class MainActivity : AppCompatActivity() {
         return listHuruf
     }
 
-    fun listKataC(): ArrayList<ListHuruf> {
+    fun listKataC():ArrayList<ListHuruf>{
         var listHuruf = arrayListOf(
             ListHuruf("Cicak"),
             ListHuruf("Cacing"),
@@ -163,7 +164,7 @@ class MainActivity : AppCompatActivity() {
         return listHuruf
     }
 
-    fun listKataD(): ArrayList<ListHuruf> {
+    fun listKataD():ArrayList<ListHuruf>{
         var listHuruf = arrayListOf(
             ListHuruf("Dasi"),
             ListHuruf("Duri"),
@@ -174,7 +175,7 @@ class MainActivity : AppCompatActivity() {
         return listHuruf
     }
 
-    fun listKataE(): ArrayList<ListHuruf> {
+    fun listKataE():ArrayList<ListHuruf>{
         var listHuruf = arrayListOf(
             ListHuruf("Emak"),
             ListHuruf("Enjing"),
@@ -185,7 +186,7 @@ class MainActivity : AppCompatActivity() {
         return listHuruf
     }
 
-    fun listKataF(): ArrayList<ListHuruf> {
+    fun listKataF():ArrayList<ListHuruf>{
         var listHuruf = arrayListOf(
             ListHuruf("Fanta"),
             ListHuruf("Fasilitas"),
@@ -196,7 +197,7 @@ class MainActivity : AppCompatActivity() {
         return listHuruf
     }
 
-    fun listKataG(): ArrayList<ListHuruf> {
+    fun listKataG():ArrayList<ListHuruf>{
         var listHuruf = arrayListOf(
             ListHuruf("Gema"),
             ListHuruf("Gaung"),
@@ -207,7 +208,7 @@ class MainActivity : AppCompatActivity() {
         return listHuruf
     }
 
-    fun listKataH(): ArrayList<ListHuruf> {
+    fun listKataH():ArrayList<ListHuruf>{
         var listHuruf = arrayListOf(
             ListHuruf("Harimau"),
             ListHuruf("Hoshi"),
@@ -218,7 +219,7 @@ class MainActivity : AppCompatActivity() {
         return listHuruf
     }
 
-    fun listKataI(): ArrayList<ListHuruf> {
+    fun listKataI():ArrayList<ListHuruf>{
         var listHuruf = arrayListOf(
             ListHuruf("Inggris"),
             ListHuruf("Itzy"),
@@ -229,7 +230,7 @@ class MainActivity : AppCompatActivity() {
         return listHuruf
     }
 
-    fun listKataJ(): ArrayList<ListHuruf> {
+    fun listKataJ():ArrayList<ListHuruf>{
         var listHuruf = arrayListOf(
             ListHuruf("Jangkrik"),
             ListHuruf("Jambu"),
@@ -240,7 +241,7 @@ class MainActivity : AppCompatActivity() {
         return listHuruf
     }
 
-    fun listKataK(): ArrayList<ListHuruf> {
+    fun listKataK():ArrayList<ListHuruf>{
         var listHuruf = arrayListOf(
             ListHuruf("Katak"),
             ListHuruf("Kodok"),
@@ -251,7 +252,7 @@ class MainActivity : AppCompatActivity() {
         return listHuruf
     }
 
-    fun listKataL(): ArrayList<ListHuruf> {
+    fun listKataL():ArrayList<ListHuruf>{
         var listHuruf = arrayListOf(
             ListHuruf("Landak"),
             ListHuruf("Lemah"),
@@ -262,9 +263,9 @@ class MainActivity : AppCompatActivity() {
         return listHuruf
     }
 
-    fun listKataM(): ArrayList<ListHuruf> {
+    fun listKataM():ArrayList<ListHuruf>{
         var listHuruf = arrayListOf(
-            ListHuruf("Manusia"),
+            ListHuruf("Manusia" ),
             ListHuruf("Musik"),
             ListHuruf("Mental"),
             ListHuruf("Mika"),
@@ -273,7 +274,7 @@ class MainActivity : AppCompatActivity() {
         return listHuruf
     }
 
-    fun adapterLayout(listkata: ArrayList<ListHuruf>) {
+    fun adapterLayout(listkata: ArrayList<ListHuruf>){
         val adapterKata = HurufAdapter(listkata)
         var linear = LinearLayoutManager(this)
 
@@ -282,7 +283,7 @@ class MainActivity : AppCompatActivity() {
         adapterKata.listener = this
     }
 
-    fun intent(list: ListHuruf) {
+    fun intent(list: ListHuruf){
         val pindah = Intent(Intent.ACTION_VIEW)
         pindah.data = Uri.parse("https://www.google.com/search?q=${list.huruf}")
         startActivity(pindah)

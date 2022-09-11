@@ -6,22 +6,28 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.recyclerview.widget.RecyclerView
 
-class HurufAdapter(val listHuruf : ArrayList<ListHuruf>) : RecyclerView.Adapter<HurufAdapter.ViewHolder>() {
-    var onClick:((ListHuruf) -> Unit)? = null
+class HurufAdapter(val listHuruf: ArrayList<ListHuruf>): RecyclerView.Adapter<HurufAdapter.ViewHolder>() {
+    var listener:  RecyclerViewClickListener? = null
+    class ViewHolder(view: View) : RecyclerView.ViewHolder(view), View.OnClickListener {
+        var huruf = view.findViewById<Button>(R.id.btnHuruf)
+        init {
+            view.setOnClickListener(this)
+        }
 
-    class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        var btnHuruf = view.findViewById<Button>(R.id.btnHuruf)
+        override fun onClick(v: View?) {
+            TODO("Not yet implemented")
+        }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        var view = LayoutInflater.from(parent.context).inflate(R.layout.item_huruf, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_huruf, parent, false)
         return ViewHolder(view)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.btnHuruf.text = listHuruf[position].huruf
-        holder.btnHuruf.setOnClickListener {
-            onClick?.invoke(listHuruf[position])
+        holder.huruf.text = listHuruf[position].huruf
+        holder.huruf.setOnClickListener{
+            listener?.onItemClicked(it, listHuruf[position])
         }
     }
 
